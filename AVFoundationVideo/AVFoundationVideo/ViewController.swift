@@ -574,17 +574,11 @@ extension ViewController {
     }
     
     /// 產生影片的檔名路徑URL
-    func currentDate()->String{
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy_MM_dd_HH_mm_ss"
-        let datetime = formatter.string(from: Date())
-        return datetime
-    }
     private func movieFileOutputURLMaker() -> URL? {
         
         guard let documentDirectoryURL = documentDirectoryURL() else { return nil }
         
-        let filename = "\(currentDate()).mp4"
+        let filename = "\(Date()).mov"
         return documentDirectoryURL.appendingPathComponent(filename)
     }
 

@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ieP-vY-Xgl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="camera" id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundationVideo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AVFoundationVideo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-TX-X8D">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="KZZ-c2-BdF">
-                                <rect key="frame" x="40" y="752" width="334" height="56"/>
+                                <rect key="frame" x="40" y="806" width="334" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDP-Ta-8Sh">
                                         <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
@@ -63,28 +62,27 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0v-Be-ZcR">
-                                <rect key="frame" x="171.5" y="10" width="71.5" height="22.5"/>
+                                <rect key="frame" x="171.5" y="54" width="71.5" height="22.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name=".SFNS-Regular" family=".SF NS" pointSize="20"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yP0-Yi-iGC">
-                                <rect key="frame" x="343" y="22" width="51" height="31"/>
+                                <rect key="frame" x="343" y="66" width="51" height="31"/>
                                 <connections>
                                     <action selector="showFilterImageView:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qrv-8v-cio"/>
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frp-Wa-95O">
-                                <rect key="frame" x="22" y="16.5" width="42.5" height="42.5"/>
+                                <rect key="frame" x="22" y="60.5" width="42.5" height="42.5"/>
                                 <state key="normal" image="filter"/>
                                 <connections>
                                     <action selector="switchFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nd2-2S-x9E"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="yP0-Yi-iGC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="2eg-gr-v3C"/>
                             <constraint firstItem="1pZ-TX-X8D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5WS-CD-fSd"/>
@@ -101,8 +99,8 @@
                             <constraint firstItem="1pZ-TX-X8D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="pDX-mX-Ezp"/>
                             <constraint firstItem="j0v-Be-ZcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qdf-7F-Cmb"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xpD-c7-Yuw"/>
                     <connections>
                         <outlet property="buttonStackView" destination="KZZ-c2-BdF" id="XJd-Os-I9u"/>
                         <outlet property="filterMenuButton" destination="Frp-Wa-95O" id="lcE-7a-4rQ"/>
@@ -116,51 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="-575"/>
-        </scene>
-        <!--menu View Controller-->
-        <scene sceneID="LbF-f0-cuC">
-            <objects>
-                <viewController id="ieP-vY-Xgl" userLabel="menu View Controller" customClass="menuViewController" customModule="AVFoundationVideo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rdt-bp-Q3m" customClass="MenuView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-8O-Wua">
-                                <rect key="frame" x="137" y="235" width="141" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="gotocamera:" destination="ieP-vY-Xgl" eventType="touchUpInside" id="vnr-Nl-R2M"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="pzK-nC-ly2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="gotocamera" id="5c2-ie-MHu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kud-66-Smn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-246" y="-575"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="BPK-Xf-3LE">
-            <objects>
-                <viewController id="Nou-aR-F1X" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nTh-9N-l43">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="EEr-YW-krD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UCm-xR-wVw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-177" y="-1248"/>
+            <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
         </scene>
     </scenes>
     <resources>
@@ -168,11 +122,5 @@
         <image name="shutter" width="42.666667938232422" height="42.666667938232422"/>
         <image name="start" width="42.666667938232422" height="42.666667938232422"/>
         <image name="switch_camera" width="42.666667938232422" height="42.666667938232422"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

@@ -16,7 +16,6 @@
 		64AA417A23E91CEF003AF59F /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 64AA417923E91CEF003AF59F /* error.wav */; };
 		64AA417D23E922A0003AF59F /* toggle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 64AA417C23E922A0003AF59F /* toggle.wav */; };
 		64AA418423E9727C003AF59F /* switch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 64AA418323E9727C003AF59F /* switch.wav */; };
-		B140260127CCD47D00D1639D /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B140260027CCD47D00D1639D /* menuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		64AA417923E91CEF003AF59F /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
 		64AA417C23E922A0003AF59F /* toggle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = toggle.wav; sourceTree = "<group>"; };
 		64AA418323E9727C003AF59F /* switch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = switch.wav; sourceTree = "<group>"; };
-		B140260027CCD47D00D1639D /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				645765D323E7CBB900313327 /* ViewController.swift */,
-				B140260027CCD47D00D1639D /* menuViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -196,7 +193,6 @@
 				645765D423E7CBB900313327 /* ViewController.swift in Sources */,
 				645765D023E7CBB900313327 /* AppDelegate.swift in Sources */,
 				645765D223E7CBB900313327 /* SceneDelegate.swift in Sources */,
-				B140260127CCD47D00D1639D /* menuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -326,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,14 +337,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W44DDMM6JD;
+				DEVELOPMENT_TEAM = F43WUF44B2;
 				INFOPLIST_FILE = AVFoundationVideo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Video123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idv.william.AVFoundationVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,14 +356,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W44DDMM6JD;
+				DEVELOPMENT_TEAM = F43WUF44B2;
 				INFOPLIST_FILE = AVFoundationVideo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Video123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idv.william.AVFoundationVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
